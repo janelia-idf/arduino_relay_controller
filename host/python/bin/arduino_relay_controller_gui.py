@@ -1,0 +1,3 @@
+#!python
+from arduino_relay_controller import arduinoRelayControllerGui
+arduinoRelayControllerGui()

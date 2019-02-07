@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Olfactometer</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <link rel="stylesheet" href="static/style.css?v=4" type="text/css" />
+    <script type="text/javascript" src="/static/js/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/static/js/sijax/sijax.js"></script>
+    <script type="text/javascript">
+      {{ g.sijax.get_js()|safe }}
+    </script>
+  </head>
+  
+  <body>
+    <table>
+      <tr>
+        <th>Odor Valve Control</th>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><button class="button" onclick="setOdorValveOn();">Set Odor Valve On</button></td>
+        <td><button class="button" onclick="setOdorValvesOff();">Set Odor Valves Off</button></td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="/static/js/olfactometer/script.js"></script>
+  </body>
+</html>

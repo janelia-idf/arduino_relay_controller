@@ -1,0 +1,63 @@
+-*- mode:org -*-
+
+# Opt101.lst
+| ref     | value                    |
+|---------+--------------------------|
+| C1      | 0.1uF                    |
+| C2      | 0.1uF                    |
+| C3      | 10uF                     |
+| C4      | 10uF                     |
+| C5      | 2.2uF                    |
+| C6      | 2.2uF                    |
+| C7      | 0.1uF                    |
+| D1      | LED                      |
+| D2      | LED                      |
+| D3      | LED                      |
+| D4      | LED                      |
+| D5      | LED                      |
+| D6      | LED                      |
+| D7      | LED                      |
+| D8      | LED                      |
+| D9      | LED                      |
+| K1      | CONN_3                   |
+| K2      | CONN_3                   |
+| K3      | CONN_3                   |
+| K4      | CONN_3                   |
+| P1      | CONN_POWER               |
+| P2      | CONN_2                   |
+| P3      | CONN_2                   |
+| P4      | CONN_2                   |
+| P5      | CONN_2                   |
+| P6      | CONN_2                   |
+| P7      | CONN_2                   |
+| P8      | CONN_2                   |
+| P9      | CONN_2                   |
+| R1      | 1.96k                    |
+| RP1     | R_PACK8_2.2k             |
+| SHIELD1 | ARDUINO_MEGA_SHIELD_FULL |
+| U1      | BAT54TW                  |
+| U2      | BAT54TW                  |
+| U3      | BAT54TW                  |
+| U4      | TLE7232                  |
+
+# Bill of Materials
+| ! | part    | description                      | vendor      | part number       | quantity |   cost |
+|---+---------+----------------------------------+-------------+-------------------+----------+--------|
+|   | PCB     | arduino_relay_control            | pcbuniverse |                   |        1 |   1.00 |
+|   | C1-2,7  | CAP CER 0.1UF 50V 10% X7R 1210   | digikey     | 478-3586-1-ND     |        3 |   0.39 |
+|   | C3-4    | CAP CER 10UF 50V 10% X7S 1210    | digikey     | 445-4536-1-ND     |        2 |   1.24 |
+|   | C5-6    | CAP TANT 2.2UF 35V 10% 1210      | digikey     | 478-2414-1-ND     |        2 |   1.25 |
+|   | D1-9    | LED GREEN CLEAR 0805 SMD         | digikey     | 160-1179-1-ND     |        9 |   0.35 |
+|   | K1-4    | CONN HEADER 3POS .100 VERT GOLD  | digikey     | WM4801-ND         |        4 |   0.96 |
+|   | P1      | CONN PWR JACK DC 2.1X5.5 8A T/H  | digikey     | CP-063AH-ND       |        1 |   1.78 |
+|   | P1      | TRANSFORMER DESK TOP 24V 60W     | digikey     | T1208-P5P-ND      |        1 |  26.98 |
+|   | P2-9    | CONN HEADER 2POS .100 VERT GOLD  | digikey     | WM4800-ND         |        8 |   0.88 |
+|   | R1      | RES 1.96K OHM 1/2W 1% 1210 SMD   | digikey     | 541-1.96KAACT-ND  |        1 |   2.89 |
+|   | RP1     | RES ARRAY 2.2K OHM 8 RES 16SOIC  | digikey     | 767-163-R2.2KP-ND |        1 |   1.30 |
+|   | SHIELD1 | BOARD MCU MEGA2560               | digikey     | 1050-1018-ND      |        1 |  51.91 |
+|   | SHIELD1 | CONN HEADER 50POS .100" SGL GOLD | digikey     | SAM1031-50-ND     |        4 |   3.33 |
+|   | U1-3    | DIODE SCHOTTKY 30V 200MA SOT363  | digikey     | BAT54TW-FDICT-ND  |        3 |   0.49 |
+|   | U4      | IC SPI DRIVER RELAY CTRL PDSO-24 | digikey     | TLE7232GCT-ND     |        1 |   4.18 |
+|---+---------+----------------------------------+-------------+-------------------+----------+--------|
+| # | total   |                                  |             |                   |          | 125.01 |
+#+TBLFM: @17$7=(@I$quantity..@II$quantity)*(@I$cost..@II$cost);%.2f;N
