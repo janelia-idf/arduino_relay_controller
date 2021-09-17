@@ -24,7 +24,7 @@ setup(
     name='arduino_relay_controller',
     version='0.1.0',
     author='Peter Polidoro',
-    author_email='peterpolidoro@gmail.com',
+    author_email='peter@polidoro.io',
     packages=['arduino_relay_controller',
               # 'arduino_relay_controller/gui',
               # 'arduino_relay_controller/webserver',
